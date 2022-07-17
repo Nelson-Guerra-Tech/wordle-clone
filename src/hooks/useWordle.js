@@ -12,6 +12,8 @@ const useWordle = (solution) => {
   const [history, setHistory] = useState([]); // each guess is a string
   // only changing to true if the user wins the game
   const [isCorrect, setIsCorrect] = useState(false);
+  // state to change the keypad
+  const [usedKeys, setUsedKeys] = useState({});
 
   // format a guess into an array of letter object
   // e.g. [{key: 'a', color: 'yellow'}]
@@ -66,6 +68,27 @@ const useWordle = (solution) => {
       return prevTurn + 1;
     });
 
+    setUsedKeys((prevUsedKeys) => {
+      formattedGuess.forEach((l) => {
+        const currentColor = prevUsedKeys[l.key];
+
+        if (l.color === 'green') {
+          prevUsedKeys[l.key] = 'green';
+          return;
+        }
+        if (l.color === 'yellow' && currentColor !== 'green') {
+          prevUsedKeys[l.key] = 'yellow';
+          return;
+        }
+        if (l.color === 'grey' && currentColor !== ('green' || 'yellow')) {
+          prevUsedKeys[l.key] = 'grey';
+          return;
+        }
+      });
+
+      return prevUsedKeys;
+    });
+
     setCurrentGuess('');
   };
 
@@ -113,7 +136,7 @@ const useWordle = (solution) => {
     }
   };
 
-  return { turn, currentGuess, guesses, isCorrect, handleKeyup };
+  return { turn, currentGuess, guesses, isCorrect, usedKeys, handleKeyup };
 };
 
 export default useWordle;
