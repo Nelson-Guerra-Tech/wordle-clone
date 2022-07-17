@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Wordle from './components/Wordle';
 import axios from 'axios';
 
 // styles
@@ -16,10 +17,10 @@ function App() {
 
         // random word from the json array
         const randomSolution = data[Math.floor(Math.random() * data.length)];
+        console.log(randomSolution.word);
+
         // we just need a word for the object
         setSolution(randomSolution.word);
-
-        console.log(randomSolution);
       } catch (error) {
         console.log(error.message);
       }
@@ -31,7 +32,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Wordle</h1>
-      {solution && <div>Solution is: {solution}</div>}
+      {solution && <Wordle solution={solution} />}
     </div>
   );
 }
