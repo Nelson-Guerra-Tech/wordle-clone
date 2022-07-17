@@ -12,15 +12,17 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/solutions');
+        const response = await axios.get(
+          'https://random-word-api.herokuapp.com/word?length=5'
+        );
         const data = await response.data;
 
         // random word from the json array
         const randomSolution = data[Math.floor(Math.random() * data.length)];
-        console.log(randomSolution.word);
+        console.log(randomSolution);
 
         // we just need a word for the object
-        setSolution(randomSolution.word);
+        setSolution(randomSolution);
       } catch (error) {
         console.log(error.message);
       }
