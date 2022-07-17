@@ -19,7 +19,7 @@ h1 {
 
 /* grid */
 .grid {
-  margin-bottom: 10rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -137,4 +137,22 @@ h1 {
     transform: scale(1);
     border-color: #333;
   }
+}
+
+/* keypad */
+.keypad {
+  max-width: 500px;
+  margin: 20px auto;
+  user-select: none;
+  color: #333;
+}
+.keypad > div {
+  margin: 5px;
+  width: 40px;
+  height: 50px;
+  background: #eee;
+  display: inline-block;
+  border-radius: 6px;
+  line-height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
