@@ -34,38 +34,21 @@ Dependencies defined in package.json:
 ## Setup And Deployment 🔧
 
 1. To Get Started, Fork this repository to your GitHub account:
-2. Clone the forked repo from your account using:
 
-     git clone https://github.com/<your-username>/home.git
-   ```
-
-3. Open in editor and edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) file.
-  
-   ```
-
-   Or for deployment at custom domain, refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson)
-
-7. After editing run the following bash commands:
+2. After editing run the following bash commands:
 
    ```bash
    npm install
    npm start
    ```
 
-8. To deploy website, run:
+3. To deploy website, run:
 
    ```bash
     npm run build
     npm run deploy
    ```
 
-   Or for deployment at \<username>.github.io, refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
-
-9. Congrats your site is up and running. To see it live, visit:
-
-   ```https
-     https://<your-username>.github.io/home
-   ```
 
 
 
