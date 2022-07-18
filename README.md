@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <h1 align="center">React Wordle Clone ✨</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p align="center">
+    It is a Wordle game clone, made with React. The goal of this project is to practice basic React fundamentals using useEffect, useState, and creating custom hooks. The game uses random words API and axios to fetch data. Site URL / Demo: 
+    <a href="https://react-wordle-updated-clone.netlify.app/">https://react-wordle-updated-clone.netlify.app/</a>
+    <br />
+    <br />
+    <a href="https://nelson-guerra.tech">About Me</a>
+  </p>
+</p>
 
-## Available Scripts
+[![Site preview](/public/social-image.png)](https://react-wordle-updated-clone.netlify.app/)
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+- [Technology Stack 🛠️](#technology-stack-)
+- [Setup And Deployment 🔧](#setup-and-deployment-)
+- [Showcase 🚀](#showcase-)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack 🛠️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Dependencies defined in package.json:
 
-### `npm test`
+[Reactjs](https://reactjs.org/)
+<!-- | [Bootstrap](https://getbootstrap.com/) -->
+<!-- | [Typist](https://github.com/jstejada/react-typist) -->
+<!-- | [GitHub API](https://developer.github.com/v3/repos/) -->
+<!-- | [Instagram API](https://www.instagram.com/developer/embedding/) -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Setup And Deployment 🔧
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. To Get Started, Fork this repository to your GitHub account:
+2. Clone the forked repo from your account using:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+     git clone https://github.com/<your-username>/home.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Open in editor and edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) file.
+  
+   ```
 
-### `npm run eject`
+   Or for deployment at custom domain, refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+7. After editing run the following bash commands:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm install
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+8. To deploy website, run:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+    npm run build
+    npm run deploy
+   ```
 
-## Learn More
+   Or for deployment at \<username>.github.io, refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+9. Congrats your site is up and running. To see it live, visit:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```https
+     https://<your-username>.github.io/home
+   ```
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
