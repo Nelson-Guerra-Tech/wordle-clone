@@ -18,7 +18,6 @@
 
 - [Technology Stack 🛠️](#technology-stack-)
 - [Setup And Deployment 🔧](#setup-and-deployment-)
-- [Showcase 🚀](#showcase-)
 
 ## Technology Stack 🛠️
 
