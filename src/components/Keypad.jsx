@@ -7,11 +7,14 @@ export default function Keypad({ usedKeys }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3002/letters');
+        const response = await axios.get(
+          'https://api.jsonbin.io/v3/b/62d606775ecb581b56c4d236'
+        );
         const data = await response.data;
 
+        console.log(data);
         // we just need a key for the object
-        setLetters(data);
+        setLetters(data.record.letters);
       } catch (error) {
         console.log(error.message);
       }
